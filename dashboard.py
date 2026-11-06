@@ -16,6 +16,8 @@ if _rasterio_spec is not None:
     _rasterio_proj = _os.path.join(
         _os.path.dirname(_rasterio_spec.origin), "proj_data"
     )
+
+    
     if not _os.path.isdir(_rasterio_proj):
         # fallback: search common locations
         import glob as _glob
